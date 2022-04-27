@@ -1,0 +1,85 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    background: #282828;
+    padding: 20px;
+
+    &__left{
+        flex: 0.3;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &__img{
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            border: 1px solid #fff;
+            padding: 2px;
+        }
+
+        &__songInfo{    
+             h4{
+                 font-size: 15px;
+                 font-weight: 600;
+                 margin-bottom: 4px;
+             }
+             p{
+                 font-size: 13px;
+                 font-weight: 300;
+             }
+        }
+    }
+
+    &__center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex: 0.4;
+
+        &--shuffle{
+
+        }
+        &--prev{
+            
+        }
+        &--play{
+            
+        }
+        &--next{
+            
+        }
+        &--repeat{
+            
+        }
+
+        &--btn:hover{
+            transition: transform 0.1s ease-in;
+            transform: scale(1.1) !important;
+            cursor: pointer;
+        }
+    }
+
+    &__right{
+        flex: 0.3;
+
+        &__controls{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+
+            &--slider{
+                margin-left: 15px;
+                width: 100px !important;
+            }
+        }
+    }
+}

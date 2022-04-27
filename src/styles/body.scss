@@ -1,0 +1,54 @@
+.body{
+    flex: 0.8;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(rgb(91,87,115),rgba(0,0,0,1));
+    padding: 30px;
+    overflow: scroll;
+
+    &__infoBox{
+        display: flex;
+        align-items: flex-end;
+        gap: 15px;
+        padding: 20px 10px;
+
+        img{
+            width: 22vw;
+            height: 35vh;
+        }
+
+        &--text{
+            h2{
+                font-size: 48px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__songs{
+        &--icons{
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            
+            &--play{
+                width: 55px !important;
+                height: 55px !important;
+            }
+        }
+
+        &--songBox{
+            margin-top: 20px;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+}

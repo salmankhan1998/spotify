@@ -1,0 +1,18 @@
+@import 'login';
+@import 'player';
+@import 'sidebar';
+@import 'body';
+@import 'footer';
+@import 'header';
+@import 'songRow';
+@import 'sidebarOption';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
